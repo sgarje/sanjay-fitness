@@ -1,0 +1,14 @@
+@(exercises: List[Exercise])
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanjay's Fitness Workout of the Day</title>
+</head>
+<body>
+<ol>
+    @for(exercise <- exercises) {
+    <li>@exercise.name and go @exercise.minutes minutes</li>
+    }
+</ol>
+</body>
+</html>

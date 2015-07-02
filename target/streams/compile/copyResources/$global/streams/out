@@ -1,0 +1,4 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\application.conf,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\logback.xml,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\routes,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\routes)[0m

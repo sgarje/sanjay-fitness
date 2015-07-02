@@ -1,0 +1,22 @@
+@(form: Form[Exercise])
+@import play.data.Form
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create a New Exercise</title>
+</head>
+<body>
+<form name="exercise_form" action="/exercise/create" method="POST">
+    <div>
+        <label id="name_label" for="name">Name:</label>
+        <input name="name" value="@form("name").value()"/>
+    </div>
+    <div>
+        <label id="minutes_label" for="minutes">Minutes:</label>
+        <input name="minutes" value="@form("minutes").value()"/>
+    </div>
+    <input id="submit" name="submit" type="submit" value="Create"/>
+</form>
+</body>
+</html>
