@@ -1,4 +1,9 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
 [0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\application.conf,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\evolutions,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\evolutions)[0m
 [0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\logback.xml,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\messages.en,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\messages.en)[0m
+[0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\messages.en-US,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\messages.en-US)[0m
 [0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\routes,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\evolutions\default,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Training\Scala\projects\sanjay-fitness\conf\evolutions\default\1.sql,C:\Training\Scala\projects\sanjay-fitness\target\scala-2.11\classes\evolutions\default\1.sql)[0m

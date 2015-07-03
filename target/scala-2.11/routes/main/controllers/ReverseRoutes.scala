@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Training/Scala/projects/sanjay-fitness/conf/routes
-// @DATE:Wed Jul 01 23:13:25 PDT 2015
+// @DATE:Thu Jul 02 15:30:51 PDT 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -33,6 +33,12 @@ package controllers {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:16
+    def listExercises(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "listexercises")
+    }
   
     // @LINE:15
     def createExercise(): Call = {

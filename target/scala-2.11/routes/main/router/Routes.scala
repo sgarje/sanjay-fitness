@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Training/Scala/projects/sanjay-fitness/conf/routes
-// @DATE:Wed Jul 01 23:13:25 PDT 2015
+// @DATE:Thu Jul 02 15:30:51 PDT 2015
 
 package router
 
@@ -54,6 +54,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """workoutoftheday""", """controllers.FitnessController.workoutOfTheDay()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """exercise/create""", """controllers.FitnessController.initExercise()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """exercise/create""", """controllers.FitnessController.createExercise()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """listexercises""", """controllers.FitnessController.listExercises()"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -197,6 +198,23 @@ class Routes(
     )
   )
 
+  // @LINE:16
+  private[this] lazy val controllers_FitnessController_listExercises8_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("listexercises")))
+  )
+  private[this] lazy val controllers_FitnessController_listExercises8_invoker = createInvoker(
+    FitnessController_2.listExercises(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.FitnessController",
+      "listExercises",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """listexercises"""
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -246,6 +264,12 @@ class Routes(
     case controllers_FitnessController_createExercise7_route(params) =>
       call { 
         controllers_FitnessController_createExercise7_invoker.call(FitnessController_2.createExercise())
+      }
+  
+    // @LINE:16
+    case controllers_FitnessController_listExercises8_route(params) =>
+      call { 
+        controllers_FitnessController_listExercises8_invoker.call(FitnessController_2.listExercises())
       }
   }
 }

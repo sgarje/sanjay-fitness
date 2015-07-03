@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Training/Scala/projects/sanjay-fitness/conf/routes
-// @DATE:Wed Jul 01 23:13:25 PDT 2015
+// @DATE:Thu Jul 02 15:30:51 PDT 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -41,6 +41,16 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:16
+    def listExercises: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.FitnessController.listExercises",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "listexercises"})
+        }
+      """
+    )
   
     // @LINE:15
     def createExercise: JavaScriptReverseRoute = JavaScriptReverseRoute(

@@ -1,0 +1,17 @@
+@(exercises: List[Exercise])
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create a New Exercise</title>
+</head>
+<body>
+Here are the list of exercises already entered!
+
+<ul>
+    @for(e <- exercises) {
+    <li>@e.name for @e.minutes minutes</li>
+    }
+</ul>
+</body>
+</html>

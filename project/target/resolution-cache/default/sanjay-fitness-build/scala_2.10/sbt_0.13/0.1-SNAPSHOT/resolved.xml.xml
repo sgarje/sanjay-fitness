@@ -4,7 +4,7 @@
 		module="sanjay-fitness-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150701220054"
+		publication="20150702150302"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

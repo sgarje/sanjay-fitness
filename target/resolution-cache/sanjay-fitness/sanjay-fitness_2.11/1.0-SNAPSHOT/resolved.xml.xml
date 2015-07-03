@@ -4,7 +4,7 @@
 		module="sanjay-fitness_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20150701221834"
+		publication="20150702150315"
 	>
 		<description>
 		sanjay-fitness
@@ -43,5 +43,7 @@
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.4.1" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.4.1" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-specs2_2.11" rev="2.4.1" conf="test->default(compile)"/>
+		<dependency org="mysql" name="mysql-connector-java" rev="5.1.35" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-jdbc-evolutions_2.11" rev="2.4.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

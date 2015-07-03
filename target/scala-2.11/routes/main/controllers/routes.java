@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Training/Scala/projects/sanjay-fitness/conf/routes
-// @DATE:Wed Jul 01 23:13:25 PDT 2015
+// @DATE:Thu Jul 02 15:30:51 PDT 2015
 
 package controllers;
 

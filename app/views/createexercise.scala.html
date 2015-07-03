@@ -1,5 +1,6 @@
-@(form: Form[Exercise])
-@import play.data.Form
+@(form: Form[Exercise])(implicit messages: Messages)
+@import play.api.data.Form
+@import play.api.i18n.Messages
 
 <!DOCTYPE html>
 <html>
@@ -10,11 +11,17 @@
 <form name="exercise_form" action="/exercise/create" method="POST">
     <div>
         <label id="name_label" for="name">Name:</label>
-        <input name="name" value="@form("name").value()"/>
+        <input name="name" value="@form("name").value"/>
+        @for(error <- form.errors("name")) {
+           <span style="color : red">@messages(error.message)</span>
+        }
     </div>
     <div>
         <label id="minutes_label" for="minutes">Minutes:</label>
-        <input name="minutes" value="@form("minutes").value()"/>
+        <input name="minutes" value="@form("minutes").value"/>
+        @for(error <- form.errors("minutes")) {
+            <span style="color : red">@messages(error.message)</span>
+        }
     </div>
     <input id="submit" name="submit" type="submit" value="Create"/>
 </form>

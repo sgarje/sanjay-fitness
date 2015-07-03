@@ -12,4 +12,5 @@ GET     /welcome/:name              controllers.FitnessController.welcomeWithNam
 GET     /exrciseoftheday            controllers.FitnessController.exerciseOfTheDay()
 GET     /workoutoftheday            controllers.FitnessController.workoutOfTheDay()
 GET     /exercise/create            controllers.FitnessController.initExercise()
-POST    /exercise/create            controllers.FitnessController.createExercise()
+POST    /exercise/create           controllers.FitnessController.createExercise()
+GET     /listexercises              controllers.FitnessController.listExercises()
